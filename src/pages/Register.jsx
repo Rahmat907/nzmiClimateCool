@@ -65,7 +65,7 @@ export default function Register() {
         {serverError && <Alert>{serverError}</Alert>}
         <Field label="Full name" error={errors.name}>
           <div className="input-icon"><User size={18} />
-            <input value={form.name} autoComplete="name" placeholder="Rahul Kumar" onChange={(e) => set('name', e.target.value)} />
+            <input value={form.name} autoComplete="name" placeholder="Rahmat Ali" onChange={(e) => set('name', e.target.value)} />
           </div>
         </Field>
         <div className="form-row">

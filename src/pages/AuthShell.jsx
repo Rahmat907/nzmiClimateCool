@@ -15,7 +15,7 @@ export default function AuthShell({ title, subtitle, children, footer }) {
             <li><ShieldCheck size={20} /> Split, Window and VRF systems covered</li>
           </ul>
         </div>
-        <small>© {new Date().getFullYear()} CoolCare. All rights reserved.</small>
+        <small>© {new Date().getFullYear()} Nazmi Climate Cool. All rights reserved.</small>
       </aside>
       <section className="auth-main">
         <div className="auth-card">
