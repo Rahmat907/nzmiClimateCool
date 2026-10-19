@@ -17,6 +17,7 @@ export class ApiError extends Error {
 let onUnauthorized = null;
 export const setUnauthorizedHandler = (fn) => { onUnauthorized = fn; };
 
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 async function request(url, { auth = true, ...options } = {}) {
   const headers = { 'Content-Type': 'application/json' };
   const token = tokenStore.get();
@@ -24,7 +25,7 @@ async function request(url, { auth = true, ...options } = {}) {
 
   let res;
   try {
-    res = await fetch(url, { ...options, headers });
+    res = await fetch(`${BASE_URL}${url}`, { ...options, headers });
   } catch {
     throw new ApiError('Cannot reach the server. Please check your connection and try again.');
   }
