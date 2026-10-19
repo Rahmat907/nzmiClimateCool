@@ -1,6 +1,6 @@
 // Change the brand once, it updates everywhere.
 export const BRAND = {
-  name: 'Nzmi Climate Cool',
+  name: 'Nazmi Climate Cool',
   tagline: 'AC installation, repair & service',
   phone: '+91 6201411814',
   email: 'ncc@coolcare.example',
