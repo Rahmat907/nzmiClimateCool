@@ -34,7 +34,7 @@ export default function Login() {
     <AuthShell
       title="Welcome back"
       subtitle="Log in to book services and track your requests."
-      footer={<>New to CoolCare? <Link to="/register">Create an account</Link></>}
+      footer={<>New to NCC? <Link to="/register">Create an account</Link></>}
     >
       <form onSubmit={submit} noValidate className="form">
         {error && <Alert>{error}</Alert>}
